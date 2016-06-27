@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>startNodeKey</key>
+	<string>node1</string>
+	<key>credits</key>
+	<dict>
+		<key>key</key>
+		<string>HauntedHouse</string>
+		<key>author</key>
+		<string>by Paul Channel</string>
+		<key>image</key>
+		<string>HauntedHouse</string>
+		<key>source</key>
+		<string>https://www.teachervision.com/creative-writing/activity/3139.html</string>
+		<key>title</key>
+		<string>Haunted House Mystery</string>
+	</dict>
+	<key>nodes</key>
+	<dict>
+		<key>node1</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node2</string>
+					<key>prompt</key>
+					<string>Go inside?</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node3</string>
+					<key>prompt</key>
+					<string>Stay there?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>It is summertime again, vacation time. You go to your uncle&apos;s house. He takes you on a tour around the city. There are many old buildings, but the oldest of all is on Main Street. The address is 880. He says that it is haunted, but you don&apos;t believe him.</string>
+			<key>title</key>
+			<string>Page 1</string>
+		</dict>
+		<key>node2</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>prompt</key>
+					<string>Go up the staircase?</string>
+					<key>connectTo</key>
+					<string>node4</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node5</string>
+					<key>prompt</key>
+					<string>Go through the swinging doors?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You say, &quot;I will go inside.&quot; He says, &quot;I want to watch you.&quot; You start up the stone steps of the old haunted house. You open the door and step inside and suddenly a sharp arrow streaks across in front of you! But it misses you.</string>
+			<key>title</key>
+			<string>Page 2</string>
+		</dict>
+		<key>node3</key>
+		<dict>
+			<key>result</key>
+			<string>lose</string>
+			<key>message</key>
+			<string>You stay there. Then you decide to go home, have an ice cream, and go to bed.</string>
+			<key>title</key>
+			<string>Page 3</string>
+		</dict>
+		<key>node4</key>
+		<dict>
+			<key>result</key>
+			<string>lose</string>
+			<key>message</key>
+			<string>You go up the stairs. You lean against the railing and it breaks. You fall and that&apos;s the end of you.</string>
+			<key>title</key>
+			<string>Page 4</string>
+		</dict>
+		<key>node5</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>prompt</key>
+					<string>Go into the closet?</string>
+					<key>connectTo</key>
+					<string>node6</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node7</string>
+					<key>prompt</key>
+					<string>Go into a passageway under the house?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You go through the swinging doors. You walk through the room.</string>
+			<key>title</key>
+			<string>Page 5</string>
+		</dict>
+		<key>node6</key>
+		<dict>
+			<key>result</key>
+			<string>lose</string>
+			<key>message</key>
+			<string>You go into the closet. You fall through a trapdoor and break your leg. The walls are too smooth to climb. There is no other way up.</string>
+			<key>title</key>
+			<string>Page 6</string>
+		</dict>
+		<key>node7</key>
+		<dict>
+			<key>result</key>
+			<string>win</string>
+			<key>message</key>
+			<string>You go into a pasaageway under the house. You make your way along and it leads to a trapdoor that takes you back to where you started from. You meet a policeman at the top and he says to you, &quot;You were lucky to get out of there. Don&apos;t ever go in there again!&quot; You go home and have some ice cream.</string>
+			<key>title</key>
+			<string>Page 7</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

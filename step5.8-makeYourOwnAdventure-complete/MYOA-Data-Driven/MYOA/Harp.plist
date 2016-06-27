@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>startNodeKey</key>
+	<string>node1</string>
+	<key>credits</key>
+	<dict>
+		<key>key</key>
+		<string>Harp</string>
+		<key>author</key>
+		<string>by Daniel Stern</string>
+		<key>image</key>
+		<string>Harp</string>
+		<key>source</key>
+		<string>http://danielstern.github.io/cyo/</string>
+		<key>title</key>
+		<string>The Sound of the Harp</string>
+	</dict>
+	<key>New item</key>
+	<string></string>
+	<key>nodes</key>
+	<dict>
+		<key>node1</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node2</string>
+					<key>prompt</key>
+					<string>Wait to get rescued?</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node3</string>
+					<key>prompt</key>
+					<string>Explore the dungeon?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You awake in a castle dungeon.\n&quot;You will never get out of here,&quot; says Smeemog, the clumsy Dragon.\n&quot;I will show you!&quot; you say, but deep down, you are worried he is right.</string>
+			<key>title</key>
+			<string>Page 1</string>
+		</dict>
+		<key>node2</key>
+		<dict>
+			<key>result</key>
+			<string>lose</string>
+			<key>message</key>
+			<string>Maybe if I wait, someone will come to rescue me!\n(You wait, and wait)\nBut nobody ever comes...</string>
+			<key>title</key>
+			<string>Page 2</string>
+		</dict>
+		<key>node3</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>prompt</key>
+					<string>Walk through the door?</string>
+					<key>connectTo</key>
+					<string>node4</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node5</string>
+					<key>prompt</key>
+					<string>Talk to the bird?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>I know I can find a way out!\nYou notice an open door and a wandering bird.</string>
+			<key>title</key>
+			<string>Page 3</string>
+		</dict>
+		<key>node4</key>
+		<dict>
+			<key>result</key>
+			<string>lose</string>
+			<key>message</key>
+			<string>You walk through the door and come upon a couryard and old tree with a carving on the trunk.\nThe carving depicts a horrible monster.\n&quot;A horrible monster! What a bunch of... ahh!&quot;\nYou turn around and are captured by the monster.</string>
+			<key>title</key>
+			<string>Page 4</string>
+		</dict>
+		<key>node5</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>prompt</key>
+					<string>Leave the harp and run?</string>
+					<key>connectTo</key>
+					<string>node6</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node7</string>
+					<key>prompt</key>
+					<string>Take the harp and run?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You try talking to the bird, but it seems to ignore you.\nSuddenly, it turns around, and points towards an old tree.\nYou walk to the tree, reach inside, and pull out a harp.</string>
+			<key>title</key>
+			<string>Page 5</string>
+		</dict>
+		<key>node6</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>prompt</key>
+					<string>Introduce yourself?</string>
+					<key>connectTo</key>
+					<string>node8</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>After a short time, you find an exit and a bridge connecting to the woods. As you are crossing, a fearsome troll climbs out from under the bridge.\n&quot;Who dares to cross me bridge!?!&quot; he bellows.</string>
+			<key>title</key>
+			<string>Page 6</string>
+		</dict>
+		<key>node7</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>prompt</key>
+					<string>Introduce yourself?</string>
+					<key>connectTo</key>
+					<string>node8</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node9</string>
+					<key>prompt</key>
+					<string>Play the harp for the troll?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>After a short time, you find an exit and a bridge connecting to the woods. As you are crossing, a fearsome troll climbs out from under the bridge.\n&quot;Who dares to cross me bridge!?!&quot; he bellows.</string>
+			<key>title</key>
+			<string>Page 7</string>
+		</dict>
+		<key>node8</key>
+		<dict>
+			<key>result</key>
+			<string>lose</string>
+			<key>message</key>
+			<string>&quot;It is I,&quot; you say.\n&quot;I do not care! I demand yer bones as payment for trespassin!&quot; yells the troll.</string>
+			<key>title</key>
+			<string>Page 8</string>
+		</dict>
+		<key>node9</key>
+		<dict>
+			<key>result</key>
+			<string>win</string>
+			<key>message</key>
+			<string>&quot;It is I, the great harpist!&quot;\nYou begin to play a hideous sounding chord that pleases the troll.\n&quot;What a wonderful song! Here, take this as payment for your performance,&quot; says the troll.\nThen, the troll hands over his treasure.</string>
+			<key>title</key>
+			<string>Page 9</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

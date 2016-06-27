@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>startNodeKey</key>
+	<string>node1</string>
+	<key>credits</key>
+	<dict>
+		<key>key</key>
+		<string>Stranger</string>
+		<key>author</key>
+		<string>by Tom Woodward</string>
+		<key>image</key>
+		<string>Stranger</string>
+		<key>source</key>
+		<string>http://bionicteaching.com/google-form-as-choose-your-own-adventure-tool/</string>
+		<key>title</key>
+		<string>Danger in the Alley</string>
+	</dict>
+	<key>nodes</key>
+	<dict>
+		<key>node1</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node2</string>
+					<key>prompt</key>
+					<string>Ask them what they want?</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node3</string>
+					<key>prompt</key>
+					<string>Pretend you don&apos;t notice?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You&apos;re walking down a dark alley. You notice someone is following you.</string>
+			<key>title</key>
+			<string>Page 1</string>
+		</dict>
+		<key>node2</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node4</string>
+					<key>prompt</key>
+					<string>Follow the shady character?</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node3</string>
+					<key>prompt</key>
+					<string>Keep walking?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You turn and say &quot;Hey, why are you following me?&quot; The shadowy figure slinks back into the gloom of a side alley.</string>
+			<key>title</key>
+			<string>Page 2</string>
+		</dict>
+		<key>node3</key>
+		<dict>
+			<key>result</key>
+			<string>lose</string>
+			<key>message</key>
+			<string>You awaken a few hours later with a splitting headache and no wallet.  Lesson learned, you return home to live out a life of quite mediocrity.</string>
+			<key>title</key>
+			<string>Page 3</string>
+		</dict>
+		<key>node4</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node3</string>
+					<key>prompt</key>
+					<string>Scream for help?</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node5</string>
+					<key>prompt</key>
+					<string>Venture further into the room?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>The alley is empty but a door halfway down the alley clicks shut just as you enter. The door falls closed. Too late, you realize there is no handle on the inside.</string>
+			<key>title</key>
+			<string>Page 4</string>
+		</dict>
+		<key>node5</key>
+		<dict>
+			<key>result</key>
+			<string>win</string>
+			<key>message</key>
+			<string>You find your alleyway admirer hiding behind some boxes in an adjacent room. Luckily, your predilection for Bruce Lee movies gives you enough fake kung fu skills to take him down.  You call the police and end the career of a mugger who has been plaguing the city for months.</string>
+			<key>title</key>
+			<string>Page 5</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

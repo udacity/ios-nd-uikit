@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>startNodeKey</key>
+	<string>node1</string>
+	<key>credits</key>
+	<dict>
+		<key>key</key>
+		<string>Tiger</string>
+		<key>author</key>
+		<string>by Jason Schatz</string>
+		<key>image</key>
+		<string>Tiger</string>
+		<key>source</key>
+		<string>http://en.wikipedia.org/wiki/Tiger</string>
+		<key>title</key>
+		<string>The Tiger</string>
+	</dict>
+	<key>nodes</key>
+	<dict>
+		<key>node1</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node2</string>
+					<key>prompt</key>
+					<string>Leap through the door and roar!</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node5</string>
+					<key>prompt</key>
+					<string>Stalk to the door, and peek down the hallway. </string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>An immense tiger wakes in an empty room. \n A door opens into a hallway. \n What should she do? </string>
+			<key>title</key>
+			<string>Page 1</string>
+		</dict>
+		<key>node2</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node3</string>
+					<key>prompt</key>
+					<string>Wait to see what happend next.</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node4</string>
+					<key>prompt</key>
+					<string>Attack the old man!</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>An old man is startled out of his chair. But he recovers, and aims his rifle at the tiger with a smile. \n What should she do? </string>
+			<key>title</key>
+			<string>Page 2</string>
+		</dict>
+		<key>node3</key>
+		<dict>
+			<key>message</key>
+			<string>The old man offers a delicious raw steak, which the tiger eats. \n She wakes in a room with a closed door. </string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+		<key>node4</key>
+		<dict>
+			<key>message</key>
+			<string>Unblinking, the man fires his rifle, and a dart stings the tiger. \n She wakes in the room, but the door is now closed.</string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+		<key>node5</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>prompt</key>
+					<string>Attack the old man!</string>
+					<key>connectTo</key>
+					<string>node6</string>
+				</dict>
+				<dict>
+					<key>prompt</key>
+					<string>Pad quietly down the hallway</string>
+					<key>connectTo</key>
+					<string>node7</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>An old man sleeps on a chair in the hallway. He has a rifle. </string>
+			<key>title</key>
+			<string>Page 5</string>
+		</dict>
+		<key>node6</key>
+		<dict>
+			<key>message</key>
+			<string>There is mayhem, and cries, and eventually a hail of darts. \n When it is over the tiger wakes again in the room, but the door is closed.</string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+		<key>node7</key>
+		<dict>
+			<key>connections</key>
+			<array>
+				<dict>
+					<key>connectTo</key>
+					<string>node8</string>
+					<key>prompt</key>
+					<string>Check out the kitchen</string>
+				</dict>
+				<dict>
+					<key>connectTo</key>
+					<string>node9</string>
+					<key>prompt</key>
+					<string>Try for the forest</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>At the end of the hallway there are two doors. \n One smells like a kitchen, the other smells like the tiger&apos;s native forest.</string>
+			<key>title</key>
+			<string>Page 1</string>
+		</dict>
+		<key>node8</key>
+		<dict>
+			<key>message</key>
+			<string>It is a kitchen, and there is a bowl with a delicious raw steak. \n She eats the steak, and wakes later in a room, without an open door. </string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+		<key>node9</key>
+		<dict>
+			<key>message</key>
+			<string>The door open to a dense forest.\n The tiger pads in. She knows that no humans can follow.</string>
+			<key>title</key>
+			<string>Freedom!</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

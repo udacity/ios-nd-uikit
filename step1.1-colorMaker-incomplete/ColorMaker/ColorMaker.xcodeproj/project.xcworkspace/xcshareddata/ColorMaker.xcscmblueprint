@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "32DB2AE76EBCD6D3DE3258C1B15BF45A6A20F764",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "68DE251D786A8ACDD6F79D1A7580150D373C08E6" : 0,
+    "32DB2AE76EBCD6D3DE3258C1B15BF45A6A20F764" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1ED2661B-253E-4445-B018-D4BBA33222AD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "68DE251D786A8ACDD6F79D1A7580150D373C08E6" : "",
+    "32DB2AE76EBCD6D3DE3258C1B15BF45A6A20F764" : "step1.1-colorMaker-incomplete\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ColorMaker",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ColorMaker\/ColorMaker.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/EdenShapiro\/ios-nanodegree-uikit-2.0.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "32DB2AE76EBCD6D3DE3258C1B15BF45A6A20F764"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/udacity\/ios-nd-uikit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "68DE251D786A8ACDD6F79D1A7580150D373C08E6"
+    }
+  ]
+}
