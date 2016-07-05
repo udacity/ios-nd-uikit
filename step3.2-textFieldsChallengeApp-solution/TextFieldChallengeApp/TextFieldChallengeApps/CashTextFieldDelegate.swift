@@ -11,16 +11,16 @@ import UIKit
 
 class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let oldText = textField.text! as NSString
-        var newText = oldText.stringByReplacingCharactersInRange(range, withString: string)
+        var newText = oldText.replacingCharacters(in: range, with: string)
         var newTextString = String(newText)
         
-        let digits = NSCharacterSet.decimalDigitCharacterSet()
+        let digits = CharacterSet.decimalDigits
         var digitText = ""
         for c in newTextString.unicodeScalars {
-            if digits.longCharacterIsMember(c.value) {
+            if digits.contains(UnicodeScalar(c.value)) {
                 digitText.append(c)
             }
         }
@@ -37,23 +37,23 @@ class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
         return false
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField.text!.isEmpty {
             textField.text = "$0.00"
         }
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         return true;
     }
     
-    func dollarStringFromInt(value: Int) -> String {
+    func dollarStringFromInt(_ value: Int) -> String {
         return String(value / 100)
     }
     
-    func centsStringFromInt(value: Int) -> String {
+    func centsStringFromInt(_ value: Int) -> String {
         
         let cents = value % 100
         var centsString = String(cents)

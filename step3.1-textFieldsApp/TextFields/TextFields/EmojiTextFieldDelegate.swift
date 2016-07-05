@@ -25,14 +25,14 @@ class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
         translations["cat"] = "\u{E04F}"
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         var replacedAnEmoji = false
         var emojiStringRange: NSRange
         
         // Construct the text that will be in the field if this change is accepted
         var newText = textField.text! as NSString
-        newText = newText.stringByReplacingCharactersInRange(range, withString: string)
+        newText = newText.replacingCharacters(in: range, with: string)
 
         // For each dictionary entry in translations, pull out a string to search for
         // and an emoji to replace it with
@@ -41,11 +41,11 @@ class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
         
             // Search for all occurances of key (ie. "dog"), and replace with emoji (ie. 🐶)
             repeat {
-                emojiStringRange = newText.rangeOfString(emojiString, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                emojiStringRange = newText.range(of: emojiString, options: NSString.CompareOptions.caseInsensitiveSearch)
             
                 // found one
                 if emojiStringRange.location != NSNotFound {
-                    newText = newText.stringByReplacingCharactersInRange(emojiStringRange, withString: emoji)
+                    newText = newText.replacingCharacters(in: emojiStringRange, with: emoji)
                     replacedAnEmoji = true
                 }
                 
@@ -63,7 +63,7 @@ class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
         
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.text = ""
     }
 }

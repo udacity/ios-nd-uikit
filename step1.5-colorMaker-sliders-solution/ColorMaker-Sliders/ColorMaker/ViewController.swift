@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func changeColorComponent(sender: AnyObject) {
+    @IBAction func changeColorComponent(_ sender: AnyObject) {
         
         let r: CGFloat = CGFloat(self.redControl.value)
         let g: CGFloat = CGFloat(self.greenControl.value)

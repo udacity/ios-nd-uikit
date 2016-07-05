@@ -13,37 +13,37 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
     
     
     let colors : [String : UIColor] = [
-        "red": UIColor.redColor(),
-        "orange":  UIColor.orangeColor(),
-        "yellow":  UIColor.yellowColor(),
-        "green":  UIColor.greenColor(),
-        "blue":  UIColor.blueColor(),
-        "brown":  UIColor.brownColor(),
-        "black":  UIColor.blackColor(),
-        "purple":  UIColor.purpleColor(),
-        "cyan" : UIColor.cyanColor(),
-        "magenta" : UIColor.magentaColor(),
-        "white" : UIColor.whiteColor()
+        "red": UIColor.red(),
+        "orange":  UIColor.orange(),
+        "yellow":  UIColor.yellow(),
+        "green":  UIColor.green(),
+        "blue":  UIColor.blue(),
+        "brown":  UIColor.brown(),
+        "black":  UIColor.black(),
+        "purple":  UIColor.purple(),
+        "cyan" : UIColor.cyan(),
+        "magenta" : UIColor.magenta(),
+        "white" : UIColor.white()
     ]
     
     /**
     * Examines the new string whenever the text changes. Finds color-words, blends them, and set the text color
     */
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         var colorsInTheText = [UIColor]()
         var newText: NSString
         
         // Construct the text that will be in the field if this change is accepted
         newText = textField.text!
-        newText = newText.stringByReplacingCharactersInRange(range, withString: string)
+        newText = newText.replacingCharacters(in: range, with: string)
         
         // For each dictionary entry in translations, pull out a string to search for
         
         for (key, color) in self.colors {
             
-            if newText.rangeOfString(key, options: NSStringCompareOptions.CaseInsensitiveSearch).location != NSNotFound {
+            if newText.range(of: key, options: NSString.CompareOptions.caseInsensitiveSearch).location != NSNotFound {
                 colorsInTheText.append(color)
             }
         }
@@ -57,7 +57,7 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
         return true
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         return true;
@@ -67,8 +67,8 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
     * accepts an array of colors, and return a blend of all the elements
     */
     
-    func blendColorArray(colors: [UIColor]) -> UIColor {
-        var colorComponents: [CGFloat] = [CGFloat](count: 4, repeatedValue: 0.0)
+    func blendColorArray(_ colors: [UIColor]) -> UIColor {
+        var colorComponents: [CGFloat] = [CGFloat](repeating: 0.0, count: 4)
         
         for color in colors {
             var red: CGFloat = 0

@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
     
         // set the label to be hidden
-        self.characterCountLabel.hidden = true
+        self.characterCountLabel.isHidden = true
         
         // Set the three delegates
         self.textField1.delegate = emojiDelegate
@@ -37,14 +37,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Text Field Delegate Methods
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
         // Figure out what the new text will be, if we return true
         var newText: NSString = textField.text!
-        newText = newText.stringByReplacingCharactersInRange(range, withString: string)
+        newText = newText.replacingCharacters(in: range, with: string)
         
         // hide the label if the newText will be an empty string
-        self.characterCountLabel.hidden = (newText.length == 0)
+        self.characterCountLabel.isHidden = (newText.length == 0)
         
         // Write the length of newText into the label
         self.characterCountLabel.text = String(newText.length)

@@ -36,7 +36,7 @@ class ResultsViewController: UIViewController {
     // MARK: -
     // MARK: View Lifecycle
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         displayResult()
     }
@@ -64,13 +64,13 @@ class ResultsViewController: UIViewController {
             imageName = "\(opponentChoice.rawValue)-\(userChoice.rawValue)"
         }
 
-        imageName = imageName.lowercaseString
+        imageName = imageName.lowercased()
         resultImage.image = UIImage(named: imageName)
         resultLabel.text = text
     }
 
     @IBAction private func playAgain() {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
 }

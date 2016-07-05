@@ -15,25 +15,25 @@ class RockPaperScissorsViewController: UIViewController {
     @IBOutlet weak var scissorsButton: UIButton!
     var match: RPSMatch!
 
-    @IBAction func makeYourMove(sender: UIButton) {
+    @IBAction func makeYourMove(_ sender: UIButton) {
         
         // Here the RPS enum holds a player's move
         switch (sender) {
         case self.rockButton:
-            throwDown(RPS.Rock)
+            throwDown(RPS.rock)
             
         case self.paperButton:
-            throwDown(RPS.Paper)
+            throwDown(RPS.paper)
 
         case self.scissorsButton:
-            throwDown(RPS.Scissors)
+            throwDown(RPS.scissors)
         
         default:
             assert(false, "An unknown button is invoking makeYourMove()")
         }
     }
     
-    func throwDown(playersMove: RPS)
+    func throwDown(_ playersMove: RPS)
     {
         // Here the RPS enum generates the opponent's move
         let computersMove = RPS()
@@ -44,26 +44,26 @@ class RockPaperScissorsViewController: UIViewController {
         //Here are the 3 ways of presenting a View Controller
         
         // 1st Way: Programmatic View Controller Presentation
-        if (playersMove == RPS.Rock) {
+        if (playersMove == RPS.rock) {
             // Get the storyboard and ResultViewController
             let storyboard = UIStoryboard (name: "Main", bundle: nil)
-            let resultVC = storyboard.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+            let resultVC = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
         
             // Communicate the match
             resultVC.match = self.match
-            self.presentViewController(resultVC, animated: true, completion: nil)
+            self.present(resultVC, animated: true, completion: nil)
         }
         
         // 2nd Way: Code plus Segue
-        else if (playersMove == RPS.Paper) {
-            performSegueWithIdentifier("throwDownPaper", sender: self)
+        else if (playersMove == RPS.paper) {
+            performSegue(withIdentifier: "throwDownPaper", sender: self)
         }
         
         // 3rd Way: Segue Only, No code!
         // But don't forget to implement prepareForSegue.
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         
         //Notice that this code works for both Scissors and Paper
         let controller = segue.destinationViewController as! ResultViewController

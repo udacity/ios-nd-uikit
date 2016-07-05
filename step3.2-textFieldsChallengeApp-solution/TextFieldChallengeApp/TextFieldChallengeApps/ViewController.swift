@@ -30,19 +30,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Text Field Delegate
 
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        return self.editingSwitch.on
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return self.editingSwitch.isOn
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         return true;
     }
     
-    @IBAction func toggleTheTextEditor(sender: AnyObject) {
+    @IBAction func toggleTheTextEditor(_ sender: AnyObject) {
         
-        if !(sender as! UISwitch).on {
+        if !(sender as! UISwitch).isOn {
             self.textField3.resignFirstResponder()
         }
     }

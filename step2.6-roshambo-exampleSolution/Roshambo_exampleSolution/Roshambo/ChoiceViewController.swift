@@ -10,21 +10,21 @@ class ChoiceViewController: UIViewController {
     // MARK: -
     // MARK: Programmatic Approach
 
-    @IBAction private func playRock(sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ResultsViewController") as! ResultsViewController
+    @IBAction private func playRock(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
         vc.userChoice = getUserShape(sender)
-        presentViewController(vc, animated: true, completion: nil)
+        present(vc, animated: true, completion: nil)
     }
 
     // MARK: Segue with Code Approach
 
-    @IBAction private func playPaper(sender: UIButton) {
-        performSegueWithIdentifier("play", sender: sender)
+    @IBAction private func playPaper(_ sender: UIButton) {
+        performSegue(withIdentifier: "play", sender: sender)
     }
 
     // MARK: Segue
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "play" {
             let vc = segue.destinationViewController as! ResultsViewController
             vc.userChoice = getUserShape(sender as! UIButton)
@@ -34,9 +34,9 @@ class ChoiceViewController: UIViewController {
     // MARK: Utilities
 
     // The enum "Shape" represents a play or move
-    private func getUserShape(sender: UIButton) -> Shape {
+    private func getUserShape(_ sender: UIButton) -> Shape {
         // Titles are set to one of: Rock, Paper, or Scissors
-        let shape = sender.titleForState(.Normal)!
+        let shape = sender.title(for: UIControlState())!
         return Shape(rawValue: shape)!
     }
 

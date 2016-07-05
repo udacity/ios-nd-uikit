@@ -12,12 +12,12 @@ import UIKit
 
 class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
     
-    let colors = [UIColor.redColor(),
-        UIColor.orangeColor(), UIColor.yellowColor(),
-        UIColor.greenColor(), UIColor.blueColor(),
-        UIColor.purpleColor(), UIColor.brownColor()];
+    let colors = [UIColor.red(),
+        UIColor.orange(), UIColor.yellow(),
+        UIColor.green(), UIColor.blue(),
+        UIColor.purple(), UIColor.brown()];
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.textColor = self.randomColor()
         
         return true

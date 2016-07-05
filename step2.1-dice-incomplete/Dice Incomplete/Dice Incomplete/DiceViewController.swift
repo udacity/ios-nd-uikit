@@ -16,7 +16,7 @@ class DiceViewController: UIViewController {
     @IBOutlet var firstDie: UIImageView!
     @IBOutlet var secondDie: UIImageView!
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         // The dice will only appear if firstValue and secondValue have been set
         if let firstValue = self.firstValue {
@@ -35,7 +35,7 @@ class DiceViewController: UIViewController {
         self.secondDie.alpha = 0
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         UIView.animate(withDuration: 0.3) {
             self.firstDie.alpha = 1
