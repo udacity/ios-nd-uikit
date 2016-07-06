@@ -158,6 +158,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Udacity;
 				TargetAttributes = {
 					4D20BB8D1A072A0300A88C83 = {
