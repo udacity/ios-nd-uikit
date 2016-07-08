@@ -10,7 +10,7 @@ import UIKit
 
 class RollViewController: UIViewController {
     /**
-    * Randomly generates an Int from 1 to 6
+    * Randomly generates a Int from 1 to 6
     */
     func randomDiceValue() -> Int {
         // Generate a random Int32 using arc4Random
@@ -23,12 +23,12 @@ class RollViewController: UIViewController {
     @IBAction func rollTheDice() {
         var controller: DiceViewController
         
-        controller = self.storyboard?.instantiateViewController(withIdentifier: "DiceViewController") as! DiceViewController
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("DiceViewController") as! DiceViewController
         
         controller.firstValue = self.randomDiceValue()
         controller.secondValue = self.randomDiceValue()
         
-        present(controller, animated: true, completion: nil)
+        presentViewController(controller, animated: true, completion: nil)
     }
     
     
