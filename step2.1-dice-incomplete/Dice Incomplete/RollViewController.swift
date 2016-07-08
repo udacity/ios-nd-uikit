@@ -10,7 +10,7 @@ import UIKit
 
 class RollViewController: UIViewController {
     /**
-    * Randomly generates an Int from 1 to 6
+    * Randomly generates a Int from 1 to 6
     */
     func randomDiceValue() -> Int {
         // Generate a random Int32 using arc4Random

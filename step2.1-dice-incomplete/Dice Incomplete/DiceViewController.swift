@@ -46,8 +46,8 @@ class DiceViewController: UIViewController {
     /**
     * accepts a conditional Int, and returns an dice image, or nil
     */
-
-    func imageForValue(value: Int?) -> UIImage? {
+    
+    func imageForValue(_ value: Int?) -> UIImage? {
         return nil
     }
     
