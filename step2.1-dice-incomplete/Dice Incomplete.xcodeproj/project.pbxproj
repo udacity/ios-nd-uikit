@@ -11,20 +11,9 @@
 		ED73D6D51A41235C004ED2C2 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73D6D41A41235C004ED2C2 /* DiceViewController.swift */; };
 		ED73D6DA1A41235C004ED2C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED73D6D91A41235C004ED2C2 /* Images.xcassets */; };
 		ED73D6DD1A41235C004ED2C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED73D6DB1A41235C004ED2C2 /* LaunchScreen.xib */; };
-		ED73D6E91A41235C004ED2C2 /* Dice_IncompleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73D6E81A41235C004ED2C2 /* Dice_IncompleteTests.swift */; };
 		ED73D6F41A412507004ED2C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED73D6F21A412507004ED2C2 /* Main.storyboard */; };
 		ED73D6F61A4126D2004ED2C2 /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73D6F51A4126D2004ED2C2 /* RollViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ED73D6E31A41235C004ED2C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED73D6C51A41235C004ED2C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED73D6CC1A41235C004ED2C2;
-			remoteInfo = "Dice Incomplete";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ED73D6CD1A41235C004ED2C2 /* Dice Incomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dice Incomplete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,22 +22,12 @@
 		ED73D6D41A41235C004ED2C2 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		ED73D6D91A41235C004ED2C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED73D6DC1A41235C004ED2C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		ED73D6E21A41235C004ED2C2 /* Dice IncompleteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dice IncompleteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED73D6E71A41235C004ED2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED73D6E81A41235C004ED2C2 /* Dice_IncompleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_IncompleteTests.swift; sourceTree = "<group>"; };
 		ED73D6F31A412507004ED2C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED73D6F51A4126D2004ED2C2 /* RollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ED73D6CA1A41235C004ED2C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED73D6DF1A41235C004ED2C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				ED73D6CF1A41235C004ED2C2 /* Dice Incomplete */,
-				ED73D6E51A41235C004ED2C2 /* Dice IncompleteTests */,
 				ED73D6CE1A41235C004ED2C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				ED73D6CD1A41235C004ED2C2 /* Dice Incomplete.app */,
-				ED73D6E21A41235C004ED2C2 /* Dice IncompleteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,23 +75,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ED73D6E51A41235C004ED2C2 /* Dice IncompleteTests */ = {
-			isa = PBXGroup;
-			children = (
-				ED73D6E81A41235C004ED2C2 /* Dice_IncompleteTests.swift */,
-				ED73D6E61A41235C004ED2C2 /* Supporting Files */,
-			);
-			path = "Dice IncompleteTests";
-			sourceTree = "<group>";
-		};
-		ED73D6E61A41235C004ED2C2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ED73D6E71A41235C004ED2C2 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,24 +95,6 @@
 			productReference = ED73D6CD1A41235C004ED2C2 /* Dice Incomplete.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ED73D6E11A41235C004ED2C2 /* Dice IncompleteTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED73D6EF1A41235C004ED2C2 /* Build configuration list for PBXNativeTarget "Dice IncompleteTests" */;
-			buildPhases = (
-				ED73D6DE1A41235C004ED2C2 /* Sources */,
-				ED73D6DF1A41235C004ED2C2 /* Frameworks */,
-				ED73D6E01A41235C004ED2C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ED73D6E41A41235C004ED2C2 /* PBXTargetDependency */,
-			);
-			name = "Dice IncompleteTests";
-			productName = "Dice IncompleteTests";
-			productReference = ED73D6E21A41235C004ED2C2 /* Dice IncompleteTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,11 +109,6 @@
 					ED73D6CC1A41235C004ED2C2 = {
 						CreatedOnToolsVersion = 6.1;
 						LastSwiftMigration = 0800;
-					};
-					ED73D6E11A41235C004ED2C2 = {
-						CreatedOnToolsVersion = 6.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = ED73D6CC1A41235C004ED2C2;
 					};
 				};
 			};
@@ -189,7 +126,6 @@
 			projectRoot = "";
 			targets = (
 				ED73D6CC1A41235C004ED2C2 /* Dice Incomplete */,
-				ED73D6E11A41235C004ED2C2 /* Dice IncompleteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +138,6 @@
 				ED73D6F41A412507004ED2C2 /* Main.storyboard in Resources */,
 				ED73D6DD1A41235C004ED2C2 /* LaunchScreen.xib in Resources */,
 				ED73D6DA1A41235C004ED2C2 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED73D6E01A41235C004ED2C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +154,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED73D6DE1A41235C004ED2C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED73D6E91A41235C004ED2C2 /* Dice_IncompleteTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ED73D6E41A41235C004ED2C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ED73D6CC1A41235C004ED2C2 /* Dice Incomplete */;
-			targetProxy = ED73D6E31A41235C004ED2C2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ED73D6DB1A41235C004ED2C2 /* LaunchScreen.xib */ = {
@@ -368,45 +281,6 @@
 			};
 			name = Release;
 		};
-		ED73D6F01A41235C004ED2C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Dice IncompleteTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dice Incomplete.app/Dice Incomplete";
-			};
-			name = Debug;
-		};
-		ED73D6F11A41235C004ED2C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Dice IncompleteTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dice Incomplete.app/Dice Incomplete";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,15 +298,6 @@
 			buildConfigurations = (
 				ED73D6ED1A41235C004ED2C2 /* Debug */,
 				ED73D6EE1A41235C004ED2C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED73D6EF1A41235C004ED2C2 /* Build configuration list for PBXNativeTarget "Dice IncompleteTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED73D6F01A41235C004ED2C2 /* Debug */,
-				ED73D6F11A41235C004ED2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

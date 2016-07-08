@@ -36,7 +36,6 @@ class DiceViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
         UIView.animate(withDuration: 0.3) {
             self.firstDie.alpha = 1
             self.secondDie.alpha = 1
@@ -46,7 +45,6 @@ class DiceViewController: UIViewController {
     /**
     * accepts a conditional Int, and returns an dice image, or nil
     */
-    
     func imageForValue(_ value: Int?) -> UIImage? {
         return nil
     }
@@ -54,10 +52,7 @@ class DiceViewController: UIViewController {
     /**
     *    dismiss this view controller
     */
-    @IBAction func dismiss() {
+    func dismiss() {
         self.dismiss(animated: true, completion: nil)
     }
-    
 }
-
-
