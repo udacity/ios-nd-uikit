@@ -12,18 +12,7 @@
 		4D20BB991A072A0300A88C83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D20BB971A072A0300A88C83 /* Main.storyboard */; };
 		4D20BB9B1A072A0300A88C83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D20BB9A1A072A0300A88C83 /* Images.xcassets */; };
 		4D20BB9E1A072A0300A88C83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D20BB9C1A072A0300A88C83 /* LaunchScreen.xib */; };
-		4D20BBAA1A072A0300A88C83 /* ColorMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BBA91A072A0300A88C83 /* ColorMakerTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4D20BBA41A072A0300A88C83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D20BB861A072A0300A88C83 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D20BB8D1A072A0300A88C83;
-			remoteInfo = ColorMaker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D20BB8E1A072A0300A88C83 /* ColorMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +22,10 @@
 		4D20BB981A072A0300A88C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D20BB9A1A072A0300A88C83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D20BB9D1A072A0300A88C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4D20BBA31A072A0300A88C83 /* ColorMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D20BBA81A072A0300A88C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D20BBA91A072A0300A88C83 /* ColorMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMakerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4D20BB8B1A072A0300A88C83 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D20BBA01A072A0300A88C83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				4D20BB901A072A0300A88C83 /* ColorMaker */,
-				4D20BBA61A072A0300A88C83 /* ColorMakerTests */,
 				4D20BB8F1A072A0300A88C83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				4D20BB8E1A072A0300A88C83 /* ColorMaker.app */,
-				4D20BBA31A072A0300A88C83 /* ColorMakerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,8 +57,8 @@
 				4D20BB931A072A0300A88C83 /* AppDelegate.swift */,
 				4D20BB951A072A0300A88C83 /* ViewController.swift */,
 				4D20BB971A072A0300A88C83 /* Main.storyboard */,
-				4D20BB9A1A072A0300A88C83 /* Images.xcassets */,
 				4D20BB9C1A072A0300A88C83 /* LaunchScreen.xib */,
+				4D20BB9A1A072A0300A88C83 /* Images.xcassets */,
 				4D20BB911A072A0300A88C83 /* Supporting Files */,
 			);
 			path = ColorMaker;
@@ -91,23 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				4D20BB921A072A0300A88C83 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4D20BBA61A072A0300A88C83 /* ColorMakerTests */ = {
-			isa = PBXGroup;
-			children = (
-				4D20BBA91A072A0300A88C83 /* ColorMakerTests.swift */,
-				4D20BBA71A072A0300A88C83 /* Supporting Files */,
-			);
-			path = ColorMakerTests;
-			sourceTree = "<group>";
-		};
-		4D20BBA71A072A0300A88C83 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D20BBA81A072A0300A88C83 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +92,6 @@
 			productReference = 4D20BB8E1A072A0300A88C83 /* ColorMaker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4D20BBA21A072A0300A88C83 /* ColorMakerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D20BBB01A072A0300A88C83 /* Build configuration list for PBXNativeTarget "ColorMakerTests" */;
-			buildPhases = (
-				4D20BB9F1A072A0300A88C83 /* Sources */,
-				4D20BBA01A072A0300A88C83 /* Frameworks */,
-				4D20BBA11A072A0300A88C83 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D20BBA51A072A0300A88C83 /* PBXTargetDependency */,
-			);
-			name = ColorMakerTests;
-			productName = ColorMakerTests;
-			productReference = 4D20BBA31A072A0300A88C83 /* ColorMakerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,11 +105,6 @@
 					4D20BB8D1A072A0300A88C83 = {
 						CreatedOnToolsVersion = 6.1;
 						LastSwiftMigration = 0800;
-					};
-					4D20BBA21A072A0300A88C83 = {
-						CreatedOnToolsVersion = 6.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = 4D20BB8D1A072A0300A88C83;
 					};
 				};
 			};
@@ -185,7 +122,6 @@
 			projectRoot = "";
 			targets = (
 				4D20BB8D1A072A0300A88C83 /* ColorMaker */,
-				4D20BBA21A072A0300A88C83 /* ColorMakerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,13 +137,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D20BBA11A072A0300A88C83 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,23 +149,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D20BB9F1A072A0300A88C83 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D20BBAA1A072A0300A88C83 /* ColorMakerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4D20BBA51A072A0300A88C83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D20BB8D1A072A0300A88C83 /* ColorMaker */;
-			targetProxy = 4D20BBA41A072A0300A88C83 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4D20BB971A072A0300A88C83 /* Main.storyboard */ = {
@@ -365,45 +278,6 @@
 			};
 			name = Release;
 		};
-		4D20BBB11A072A0300A88C83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ColorMakerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.udacity.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorMaker.app/ColorMaker";
-			};
-			name = Debug;
-		};
-		4D20BBB21A072A0300A88C83 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ColorMakerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.udacity.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorMaker.app/ColorMaker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,15 +295,6 @@
 			buildConfigurations = (
 				4D20BBAE1A072A0300A88C83 /* Debug */,
 				4D20BBAF1A072A0300A88C83 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D20BBB01A072A0300A88C83 /* Build configuration list for PBXNativeTarget "ColorMakerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D20BBB11A072A0300A88C83 /* Debug */,
-				4D20BBB21A072A0300A88C83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
