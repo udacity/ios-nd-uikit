@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextFieldChallengeApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9Y-6I-XUA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ndo-70-ihp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCm-cz-hSb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AZB-0j-ZUN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0P-sE-e6V">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="9wY-PR-yKp"/>
+                                    <constraint firstAttribute="height" constant="31" id="Mkj-Bi-kzf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="toggleTheTextEditor:" destination="vXZ-lx-hvc" eventType="valueChanged" id="J5z-ky-YCh"/>
+                                </connections>
+                            </switch>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUh-Xf-odv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yym-lm-i0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qCm-cz-hSb" firstAttribute="top" secondItem="f9Y-6I-XUA" secondAttribute="bottom" constant="8" id="1mR-ng-ULr"/>
+                            <constraint firstItem="o0P-sE-e6V" firstAttribute="leading" secondItem="GUh-Xf-odv" secondAttribute="trailing" constant="8" id="AjJ-Fw-qub"/>
+                            <constraint firstItem="o0P-sE-e6V" firstAttribute="top" secondItem="qCm-cz-hSb" secondAttribute="bottom" constant="8" id="CY0-JJ-MvY"/>
+                            <constraint firstItem="qCm-cz-hSb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="DWg-zh-n2Z"/>
+                            <constraint firstItem="GUh-Xf-odv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="DbT-8R-HIx"/>
+                            <constraint firstItem="f9Y-6I-XUA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="JEZ-kd-wLs"/>
+                            <constraint firstItem="f9Y-6I-XUA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="PTB-o6-IiS"/>
+                            <constraint firstItem="qCm-cz-hSb" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="QFa-EL-zik"/>
+                            <constraint firstItem="o0P-sE-e6V" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="QoJ-fk-7k5"/>
+                            <constraint firstItem="GUh-Xf-odv" firstAttribute="top" secondItem="qCm-cz-hSb" secondAttribute="bottom" constant="8" id="tId-eh-FdL"/>
+                            <constraint firstItem="f9Y-6I-XUA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="zx2-Bn-gbW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editingSwitch" destination="o0P-sE-e6V" id="fSS-Ch-Wbb"/>
+                        <outlet property="textField1" destination="f9Y-6I-XUA" id="KKY-av-46r"/>
+                        <outlet property="textField2" destination="qCm-cz-hSb" id="N7X-ey-NYK"/>
+                        <outlet property="textField3" destination="GUh-Xf-odv" id="UbK-bl-R7X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="419"/>
+        </scene>
+    </scenes>
+</document>
