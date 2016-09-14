@@ -9,9 +9,15 @@
 import Foundation
 import UIKit
 
+// MARK: - EmojiTextFieldDelegate : NSObject, UITextFieldDelegate
+
 class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
+
+    // MARK: Properties
     
     var translations = [String : String]()
+    
+    // MARK: Initializer
     
     override init() {
         super.init()
@@ -24,6 +30,8 @@ class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
         translations["dog"] = "\u{E052}"
         translations["cat"] = "\u{E04F}"
     }
+    
+    // MARK: When TextField Changes
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         

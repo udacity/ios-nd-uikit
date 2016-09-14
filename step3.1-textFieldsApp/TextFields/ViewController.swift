@@ -8,19 +8,23 @@
 
 import UIKit
 
+// MARK: - ViewController: UIViewController, UITextFieldDelegate
+
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    // Outlets
+    // MARK: Outlets
+    
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
     @IBOutlet weak var characterCountLabel: UILabel!
     
-    // Text Field Delegate objects
+    // MARK: Text Field Delegate objects
+    
     let emojiDelegate = EmojiTextFieldDelegate()
     let colorizerDelegate = ColorizerTextFieldDelegate()
     
-    // Life Cycle Methods
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +39,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     
-    // Text Field Delegate Methods
+    // MARK: Text Field Delegate Methods
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
 
@@ -53,4 +57,3 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true;
     }
 }
-

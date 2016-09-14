@@ -9,8 +9,11 @@
 import Foundation
 import UIKit
 
+// MARK: - ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate
+
 class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
     
+    // MARK: Properties
     
     let colors : [String : UIColor] = [
         "red": UIColor.redColor(),
@@ -25,6 +28,8 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
         "magenta" : UIColor.magentaColor(),
         "white" : UIColor.whiteColor()
     ]
+    
+    // MARK: When TextField Changes
     
     /**
     * Examines the new string whenever the text changes. Finds color-words, blends them, and set the text color
@@ -92,18 +97,3 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
     }
        
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

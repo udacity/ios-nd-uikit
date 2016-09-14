@@ -134,9 +134,9 @@
                             <constraint firstAttribute="centerX" secondItem="HM4-MI-r2M" secondAttribute="centerX" id="NOD-FE-twa"/>
                             <constraint firstAttribute="centerX" secondItem="SkQ-nF-AKs" secondAttribute="centerX" id="YKl-NA-muv"/>
                             <constraint firstItem="rqm-mq-mTN" firstAttribute="top" secondItem="GF5-bj-reb" secondAttribute="bottom" constant="102" id="mqt-IJ-nqt"/>
-                            <constraint firstItem="HM4-MI-r2M" firstAttribute="top" secondItem="rqm-mq-mTN" secondAttribute="bottom" constant="8" id="vke-c2-Ph5"/>
+                            <constraint firstItem="HM4-MI-r2M" firstAttribute="top" secondItem="rqm-mq-mTN" secondAttribute="bottom" constant="16" id="vke-c2-Ph5"/>
                             <constraint firstAttribute="bottom" secondItem="SkQ-nF-AKs" secondAttribute="bottom" constant="123" id="w1Q-9b-jVT"/>
-                            <constraint firstItem="SkQ-nF-AKs" firstAttribute="top" secondItem="HM4-MI-r2M" secondAttribute="bottom" constant="75" id="y3m-sJ-P0o"/>
+                            <constraint firstItem="SkQ-nF-AKs" firstAttribute="top" secondItem="HM4-MI-r2M" secondAttribute="bottom" constant="40" id="y3m-sJ-P0o"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="raX-89-aNh"/>

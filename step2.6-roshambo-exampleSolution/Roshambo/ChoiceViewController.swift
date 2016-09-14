@@ -5,6 +5,8 @@
 
 import UIKit
 
+// MARK: - ChoiceViewController: UIViewController
+
 class ChoiceViewController: UIViewController {
     
     // MARK: Programmatic Approach
@@ -38,5 +40,4 @@ class ChoiceViewController: UIViewController {
         let shape = sender.titleForState(.Normal)!
         return Shape(rawValue: shape)!
     }
-
 }

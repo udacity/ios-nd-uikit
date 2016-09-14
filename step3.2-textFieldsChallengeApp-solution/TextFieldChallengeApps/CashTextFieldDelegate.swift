@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+// MARK: - CashTextFieldDelegate: NSObject, UITextFieldDelegate
+
 class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -65,31 +67,3 @@ class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
         return centsString
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

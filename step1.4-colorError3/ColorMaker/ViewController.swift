@@ -8,18 +8,25 @@
 
 import UIKit
 
+// MARK: - ViewController: UIViewController
+
 class ViewController: UIViewController {
+
+    // MARK: Properties
     
     @IBOutlet weak var colorView: UIView!
-    
     @IBOutlet weak var redControl: UISwitch!
     @IBOutlet weak var greenControl: UISwitch!
     @IBOutlet weak var blueControl: UISwitch!
 
+    // MARK: Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    // MARK: Actions
     
     @IBAction func changeColorComponent(sender: AnyObject) {
         

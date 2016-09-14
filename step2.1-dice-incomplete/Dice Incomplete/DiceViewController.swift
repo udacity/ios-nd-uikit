@@ -8,13 +8,21 @@
 import Foundation
 import UIKit
 
+// MARK: - DiceViewController: UIViewController
+
 class DiceViewController: UIViewController {
+
+    // MARK: Properties
     
     var firstValue: Int?
     var secondValue: Int?
     
+    // MARK: Outlets
+    
     @IBOutlet var firstDie: UIImageView!
     @IBOutlet var secondDie: UIImageView!
+    
+    // MARK: Life Cycle
     
     override func viewWillAppear(animated: Bool) {
         
@@ -36,28 +44,23 @@ class DiceViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        
         UIView.animateWithDuration(0.3) {
             self.firstDie.alpha = 1
             self.secondDie.alpha = 1
         }
     }
     
-    /**
-    * accepts a conditional Int, and returns an dice image, or nil
-    */
+    // MARK: Get Image for Dice Value
     
+    // accepts a conditional Int, and returns an dice image, or nil
     func imageForValue(value: Int?) -> UIImage? {
         return nil
     }
     
-    /**
-    *    dismiss this view controller
-    */
+    // MARK: Action
+    
     @IBAction func dismiss() {
+        // dismiss this view controller
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
 }
-
-

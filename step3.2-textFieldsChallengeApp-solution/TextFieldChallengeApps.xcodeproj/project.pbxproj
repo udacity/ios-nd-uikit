@@ -60,15 +60,15 @@
 		4D08C4A11A14360900A95F43 /* TextFieldChallengeApps */ = {
 			isa = PBXGroup;
 			children = (
-				4D08C4A61A14360900A95F43 /* ViewController.swift */,
-				4D08C4C41A1436CD00A95F43 /* ZipCodeTextFieldDelegate.swift */,
-				4D08C4C61A1436EA00A95F43 /* CashTextFieldDelegate.swift */,
 				4D08C4A41A14360900A95F43 /* AppDelegate.swift */,
-				4D08C4A81A14360900A95F43 /* Main.storyboard */,
-				4D08C4AB1A14360900A95F43 /* Images.xcassets */,
-				4D08C4AD1A14360900A95F43 /* LaunchScreen.xib */,
-				4D08C4A21A14360900A95F43 /* Supporting Files */,
+				4D08C4A61A14360900A95F43 /* ViewController.swift */,
+				4D08C4C61A1436EA00A95F43 /* CashTextFieldDelegate.swift */,
+				4D08C4C41A1436CD00A95F43 /* ZipCodeTextFieldDelegate.swift */,
 				4D08C4C81A15422C00A95F43 /* RandomColorTextFieldDelegate.swift */,
+				4D08C4A81A14360900A95F43 /* Main.storyboard */,
+				4D08C4AD1A14360900A95F43 /* LaunchScreen.xib */,
+				4D08C4AB1A14360900A95F43 /* Images.xcassets */,
+				4D08C4A21A14360900A95F43 /* Supporting Files */,
 			);
 			path = TextFieldChallengeApps;
 			sourceTree = "<group>";

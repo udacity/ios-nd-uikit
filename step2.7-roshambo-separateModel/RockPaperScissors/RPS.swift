@@ -8,9 +8,12 @@
 
 import Foundation
 
-// The RPS enum represents a move.
+// MARK: - RPS
 
 enum RPS {
+    
+    // The RPS enum represents a move.
+    
     case Rock, Paper, Scissors
 
     // The init method randomly generates the opponent's move
@@ -36,6 +39,8 @@ enum RPS {
         }
     }
 }
+
+// MARK: - RPS: CustomStringConvertible
 
 extension RPS: CustomStringConvertible {
     

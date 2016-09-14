@@ -57,8 +57,8 @@
 				4D20BB931A072A0300A88C83 /* AppDelegate.swift */,
 				4D20BB951A072A0300A88C83 /* ViewController.swift */,
 				4D20BB971A072A0300A88C83 /* Main.storyboard */,
-				4D20BB9A1A072A0300A88C83 /* Images.xcassets */,
 				4D20BB9C1A072A0300A88C83 /* LaunchScreen.xib */,
+				4D20BB9A1A072A0300A88C83 /* Images.xcassets */,
 				4D20BB911A072A0300A88C83 /* Supporting Files */,
 			);
 			path = ColorMaker;

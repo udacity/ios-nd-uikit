@@ -56,12 +56,12 @@
 		4D673C311A0BF21F00F01D25 /* Dice */ = {
 			isa = PBXGroup;
 			children = (
-				4D673C541A0BF26900F01D25 /* DiceViewController.swift */,
-				4D673C361A0BF21F00F01D25 /* RollViewController.swift */,
 				4D673C341A0BF21F00F01D25 /* AppDelegate.swift */,
+				4D673C361A0BF21F00F01D25 /* RollViewController.swift */,
+				4D673C541A0BF26900F01D25 /* DiceViewController.swift */,
 				4D673C381A0BF21F00F01D25 /* Main.storyboard */,
-				4D673C3B1A0BF21F00F01D25 /* Images.xcassets */,
 				4D673C3D1A0BF21F00F01D25 /* LaunchScreen.xib */,
+				4D673C3B1A0BF21F00F01D25 /* Images.xcassets */,
 				4D673C321A0BF21F00F01D25 /* Supporting Files */,
 			);
 			path = Dice;

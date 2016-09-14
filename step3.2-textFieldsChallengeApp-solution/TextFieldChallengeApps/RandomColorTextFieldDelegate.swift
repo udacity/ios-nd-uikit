@@ -10,7 +10,11 @@
 import Foundation
 import UIKit
 
+// MARK: - RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate
+
 class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
+    
+    // MARK: Properties
     
     let colors = [UIColor.redColor(),
         UIColor.orangeColor(), UIColor.yellowColor(),
@@ -29,31 +33,3 @@ class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
         return colors[randomIndex]
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

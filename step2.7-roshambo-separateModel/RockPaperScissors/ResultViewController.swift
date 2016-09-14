@@ -8,27 +8,31 @@
 
 import UIKit
 
+// MARK: - ResultViewController: UIViewController
+
 class ResultViewController: UIViewController {
 
+    // MARK: Outlets
+    
     @IBOutlet weak var resultImageView: UIImageView!
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var playAgainButton: UIButton!
+    
+    // MARK: Properties
     
     var match: RPSMatch!
-    
     var message: NSString!
     var  picture: UIImage!
     
-    @IBOutlet weak var playAgainButton: UIButton!
+    // MARK: Life Cycle
     
-    override func viewWillAppear(animated:Bool)
-    {
+    override func viewWillAppear(animated:Bool) {
         super.viewWillAppear(animated)
         self.messageLabel.text = messageForMatch(match)
         self.resultImageView.image = imageForMatch(match)
     }
 
-    override func viewDidAppear(animated: Bool)
-    {
+    override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
         UIView.animateWithDuration(1.5)
@@ -37,10 +41,13 @@ class ResultViewController: UIViewController {
         }
     }
     
-    @IBAction func playAgainButtonPressed(sender: AnyObject)
-    {
+    // MARK: Actions
+    
+    @IBAction func playAgainButtonPressed(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    // MARK: Generate Messages for Match
     
     func messageForMatch(match: RPSMatch) -> String {
         
@@ -68,6 +75,8 @@ class ResultViewController: UIViewController {
             return "covers"
         }
     }
+    
+    // MARK: Generate Image for Match
     
     func imageForMatch(match: RPSMatch) -> UIImage {
         

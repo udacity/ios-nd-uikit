@@ -60,14 +60,14 @@
 		ED3A4E151A01B7E5002B8AA1 /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				4D37A9B71A3916A6007035E1 /* Main.storyboard */,
-				EDA5EFB41A02BFB800AABA2F /* RockPaperScissorsViewController.swift */,
+				ED3A4E181A01B7E5002B8AA1 /* AppDelegate.swift */,
 				EDA5EFB21A02B4F200AABA2F /* ResultViewController.swift */,
+				EDA5EFB41A02BFB800AABA2F /* RockPaperScissorsViewController.swift */,
 				4D08C4CA1A16B28300A95F43 /* RPS.swift */,
 				4D08C4CC1A16B29700A95F43 /* RPSMatch.swift */,
-				ED3A4E1F1A01B7E5002B8AA1 /* Images.xcassets */,
+				4D37A9B71A3916A6007035E1 /* Main.storyboard */,
 				ED3A4E211A01B7E5002B8AA1 /* LaunchScreen.xib */,
-				ED3A4E181A01B7E5002B8AA1 /* AppDelegate.swift */,
+				ED3A4E1F1A01B7E5002B8AA1 /* Images.xcassets */,
 				ED3A4E161A01B7E5002B8AA1 /* Supporting Files */,
 			);
 			path = RockPaperScissors;

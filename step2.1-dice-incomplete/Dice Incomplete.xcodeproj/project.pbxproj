@@ -56,12 +56,12 @@
 		ED73D6CF1A41235C004ED2C2 /* Dice Incomplete */ = {
 			isa = PBXGroup;
 			children = (
-				ED73D6F51A4126D2004ED2C2 /* RollViewController.swift */,
-				ED73D6F21A412507004ED2C2 /* Main.storyboard */,
 				ED73D6D21A41235C004ED2C2 /* AppDelegate.swift */,
+				ED73D6F51A4126D2004ED2C2 /* RollViewController.swift */,
 				ED73D6D41A41235C004ED2C2 /* DiceViewController.swift */,
-				ED73D6D91A41235C004ED2C2 /* Images.xcassets */,
+				ED73D6F21A412507004ED2C2 /* Main.storyboard */,
 				ED73D6DB1A41235C004ED2C2 /* LaunchScreen.xib */,
+				ED73D6D91A41235C004ED2C2 /* Images.xcassets */,
 				ED73D6D01A41235C004ED2C2 /* Supporting Files */,
 			);
 			path = "Dice Incomplete";

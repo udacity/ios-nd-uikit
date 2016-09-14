@@ -58,12 +58,12 @@
 		4D08C46C1A126D0300A95F43 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
-				4D08C4711A126D0300A95F43 /* ViewController.swift */,
-				4D08C4731A126D0300A95F43 /* Main.storyboard */,
-				4D08C4951A13DA1500A95F43 /* Text Field Delegates */,
 				4D08C46F1A126D0300A95F43 /* AppDelegate.swift */,
-				4D08C4761A126D0300A95F43 /* Images.xcassets */,
+				4D08C4711A126D0300A95F43 /* ViewController.swift */,
+				4D08C4951A13DA1500A95F43 /* Text Field Delegates */,
+				4D08C4731A126D0300A95F43 /* Main.storyboard */,
 				4D08C4781A126D0300A95F43 /* LaunchScreen.xib */,
+				4D08C4761A126D0300A95F43 /* Images.xcassets */,
 				4D08C46D1A126D0300A95F43 /* Supporting Files */,
 			);
 			path = TextFields;
