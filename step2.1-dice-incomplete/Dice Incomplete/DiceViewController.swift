@@ -8,13 +8,21 @@
 import Foundation
 import UIKit
 
+// MARK: DiceViewController: UIViewController
+
 class DiceViewController: UIViewController {
+
+    // MARK: Properties
     
     var firstValue: Int?
     var secondValue: Int?
     
+    // MARK: Outlets
+    
     @IBOutlet var firstDie: UIImageView!
     @IBOutlet var secondDie: UIImageView!
+    
+    // MARK: Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
         

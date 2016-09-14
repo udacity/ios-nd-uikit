@@ -8,8 +8,9 @@
 
 import Foundation
 
-// The RPS enum represents a move.
+// MARK: - RPS
 
+// the RPS enum represents a move.
 enum RPS {
     case rock, paper, scissors
 
@@ -36,6 +37,8 @@ enum RPS {
         }
     }
 }
+
+// MARK: - RPS: CustomStringConvertible
 
 extension RPS: CustomStringConvertible {
     

@@ -8,15 +8,23 @@
 
 import UIKit
 
+// MARK: - ViewController: UIViewController, UITextFieldDelegate
+
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    // MARK: Properties
+    
+    let zipCodeDelegate = ZipCodeTextFieldDelegate()
+    let cashDelegate = CashTextFieldDelegate()
+    
+    // MARK: Outlets
+    
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
     @IBOutlet weak var editingSwitch: UISwitch!
     
-    let zipCodeDelegate = ZipCodeTextFieldDelegate()
-    let cashDelegate = CashTextFieldDelegate()
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.editingSwitch.setOn(false, animated: false)
     }
     
-    // Text Field Delegate
+    // MARK: Text Field Delegate
 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return self.editingSwitch.isOn
@@ -39,6 +47,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         return true;
     }
+ 
+    // MARK: Actions
     
     @IBAction func toggleTheTextEditor(_ sender: AnyObject) {
         
@@ -46,6 +56,4 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.textField3.resignFirstResponder()
         }
     }
-
 }
-

@@ -8,11 +8,13 @@
 
 import UIKit
 
+// MARK: - RollViewController: UIViewController
+
 class RollViewController: UIViewController {
     
-    /**
-    * Randomly generates a Int from 1 to 6
-    */
+    // MARK: Generate Dice Value
+    
+    // randomly generates a Int from 1 to 6
     func randomDiceValue() -> Int {
         // Generate a random Int32 using arc4Random
         let randomValue = 1 + arc4random() % 6
@@ -21,9 +23,10 @@ class RollViewController: UIViewController {
         return Int(randomValue)
     }
 
+    // MARK: Actions
+    
     @IBAction func rollTheDice(){
+        
     }
-    
-    
 }
 

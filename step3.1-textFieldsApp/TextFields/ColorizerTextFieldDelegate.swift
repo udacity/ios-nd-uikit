@@ -9,21 +9,24 @@
 import Foundation
 import UIKit
 
-class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
+// MARK: - ColorizerTextFieldDelegate: NSObject, UITextFieldDelegate
+
+class ColorizerTextFieldDelegate: NSObject, UITextFieldDelegate {
     
+    // MARK: Properties
     
-    let colors : [String : UIColor] = [
-        "red": UIColor.red(),
-        "orange":  UIColor.orange(),
-        "yellow":  UIColor.yellow(),
-        "green":  UIColor.green(),
-        "blue":  UIColor.blue(),
-        "brown":  UIColor.brown(),
-        "black":  UIColor.black(),
-        "purple":  UIColor.purple(),
-        "cyan" : UIColor.cyan(),
-        "magenta" : UIColor.magenta(),
-        "white" : UIColor.white()
+    let colors: [String:UIColor] = [
+        "red": UIColor.red,
+        "orange":  UIColor.orange,
+        "yellow":  UIColor.yellow,
+        "green":  UIColor.green,
+        "blue":  UIColor.blue,
+        "brown":  UIColor.brown,
+        "black":  UIColor.black,
+        "purple":  UIColor.purple,
+        "cyan" : UIColor.cyan,
+        "magenta" : UIColor.magenta,
+        "white" : UIColor.white
     ]
     
     /**
@@ -33,17 +36,16 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         var colorsInTheText = [UIColor]()
-        var newText: NSString
         
         // Construct the text that will be in the field if this change is accepted
-        newText = textField.text!
-        newText = newText.replacingCharacters(in: range, with: string)
+        var newText = textField.text! as NSString
+        newText = newText.replacingCharacters(in: range, with: string) as NSString
         
         // For each dictionary entry in translations, pull out a string to search for
         
         for (key, color) in self.colors {
             
-            if newText.range(of: key, options: NSString.CompareOptions.caseInsensitiveSearch).location != NSNotFound {
+            if newText.range(of: key, options: .caseInsensitive).location != NSNotFound {
                 colorsInTheText.append(color)
             }
         }
@@ -92,18 +94,3 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
     }
        
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

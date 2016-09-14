@@ -5,9 +5,10 @@
 
 import UIKit
 
-class ChoiceViewController: UIViewController {
+// MARK: - ChoiceViewController: UIViewController
 
-    // MARK: -
+class ChoiceViewController: UIViewController {
+    
     // MARK: Programmatic Approach
 
     @IBAction private func playRock(_ sender: UIButton) {
@@ -24,9 +25,9 @@ class ChoiceViewController: UIViewController {
 
     // MARK: Segue
 
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "play" {
-            let vc = segue.destinationViewController as! ResultsViewController
+            let vc = segue.destination as! ResultsViewController
             vc.userChoice = getUserShape(sender as! UIButton)
         }
     }
@@ -39,5 +40,4 @@ class ChoiceViewController: UIViewController {
         let shape = sender.title(for: UIControlState())!
         return Shape(rawValue: shape)!
     }
-
 }

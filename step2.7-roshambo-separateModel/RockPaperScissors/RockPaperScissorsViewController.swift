@@ -8,12 +8,21 @@
 
 import UIKit
 
+// MARK: - RockPaperScissorsViewController: UIViewController
+
 class RockPaperScissorsViewController: UIViewController {
 
+    // MARK: Properties
+    
+    var match: RPSMatch!
+    
+    // MARK: Outlets
+    
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
-    var match: RPSMatch!
+    
+    // MARK: Actions
 
     @IBAction func makeYourMove(_ sender: UIButton) {
         
@@ -32,6 +41,8 @@ class RockPaperScissorsViewController: UIViewController {
             assert(false, "An unknown button is invoking makeYourMove()")
         }
     }
+    
+    // MARK: Play!
     
     func throwDown(_ playersMove: RPS)
     {
@@ -63,11 +74,12 @@ class RockPaperScissorsViewController: UIViewController {
         // But don't forget to implement prepareForSegue.
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    // MARK: Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         //Notice that this code works for both Scissors and Paper
-        let controller = segue.destinationViewController as! ResultViewController
+        let controller = segue.destination as! ResultViewController
         controller.match = self.match
     }
-    
 }

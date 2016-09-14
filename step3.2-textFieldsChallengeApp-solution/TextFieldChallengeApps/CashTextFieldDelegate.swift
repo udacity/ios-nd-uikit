@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+// MARK: - CashTextFieldDelegate: NSObject, UITextFieldDelegate
+
 class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -19,9 +21,9 @@ class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
         
         let digits = CharacterSet.decimalDigits
         var digitText = ""
-        for c in newTextString.unicodeScalars {
-            if digits.contains(UnicodeScalar(c.value)) {
-                digitText.append(c)
+        for c in (newTextString?.unicodeScalars)! {
+            if digits.contains(UnicodeScalar(c.value)!) {
+                digitText.append("\(c)")
             }
         }
         
@@ -65,31 +67,3 @@ class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
         return centsString
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

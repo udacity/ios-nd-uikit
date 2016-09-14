@@ -5,6 +5,8 @@
 
 import UIKit
 
+// MARK: - Shape: String
+
 // The enum "Shape" represents a play or move
 enum Shape: String {
     case Rock = "Rock"
@@ -19,29 +21,28 @@ enum Shape: String {
     }
 }
 
-class ResultsViewController: UIViewController {
+// MARK: - ResultsViewController: UIViewController
 
-    // MARK: -
+class ResultsViewController: UIViewController {
+    
     // MARK: Outlets
 
     @IBOutlet private weak var resultImage: UIImageView!
     @IBOutlet private weak var resultLabel: UILabel!
 
-    // MARK: Shapes
+    // MARK: Properties
 
     // When the ResultsViewController is initialized a userChoice is passed in and an opponent's play is generated.
     var userChoice: Shape!
     private let opponentChoice: Shape = Shape.randomShape()
 
-    // MARK: -
-    // MARK: View Lifecycle
+    // MARK: Life Cycle
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         displayResult()
     }
-
-    // MARK: -
+    
     // MARK: UI
 
     // The displayResult method generates the image and message for the results of a match.
@@ -69,8 +70,9 @@ class ResultsViewController: UIViewController {
         resultLabel.text = text
     }
 
+    // MARK: Actions
+    
     @IBAction private func playAgain() {
         dismiss(animated: true, completion: nil)
     }
-
 }
