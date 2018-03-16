@@ -37,7 +37,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: Text Field Delegate
-
+    // Prevent editing when text field is already selected prior to toggling switch
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let isEditable = self.editingSwitch.isOn ? true : false
+        return isEditable
+    }
+    
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return self.editingSwitch.isOn
     }
