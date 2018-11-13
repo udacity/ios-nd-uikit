@@ -21,7 +21,7 @@ class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
         
         let digits = CharacterSet.decimalDigits
         var digitText = ""
-        for c in (newTextString?.unicodeScalars)! {
+        for c in (newTextString.unicodeScalars) {
             if digits.contains(UnicodeScalar(c.value)!) {
                 digitText.append("\(c)")
             }
